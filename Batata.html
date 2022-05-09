@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 900px;  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column" style="background-color:white;">
+    <H1 style="color:red; font-family:verdana; font-size:250%">Batata Batata Batata</H1>
+        <H2 style="color:blue; font-family:Ariel; font-size:160%">Batata Batata Batata</H2>
+            <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+            <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+            <py-script>
+X = 1
+Y = 0
+Z = 0 
+while X <= 20:
+    Y = X * X
+    Z = Y * X
+    print("The number is:  " + str(X))
+    print("Square of number is:  "+ str(Y))
+    print("The cube of the number is:  "+ str(Z))
+    X = X + 1
+                </py-script>
+  </div>
+  <div class="column" style="background-color:white;">
+    <H1 style="color:green; font-family:verdana; font-size:250%">Batata Batata Batata</H1>
+    <marquee behavior="Alternate" direction="right">
+        <img src="A.jpeg"/>
+    </marquee>
+    <marquee behavior="Alternate" direction="right">
+        <img src="Batata.jpg"/>
+    </marquee>
+    <PY-SCRIPT>  
+from datetime import datetime
+Abhi = datetime.now()
+Abhi = Abhi.strftime("%A, %d / %b / %Y time:-->  %H::%M::%S")
+print("The current time is:  "+ Abhi)
+</PY-SCRIPT>
+  </div>
+</div>
+
+</body>
+</html>
